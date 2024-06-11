@@ -1,0 +1,127 @@
+.login{
+    height: 100vh;
+    /* background-image: linear-gradient(#0000007e, #0000007e), url('/background_banner.jpg');*/
+    background-image: url('../../assets/background_banner.jpg'),linear-gradient(#0000007e, #0000007e);
+    padding: 20px 8%; 
+    width: 100%;
+}
+.login-logo{
+    width: 150px;
+}
+/*Configuration for the logo name*/
+.logo-login{
+    width: 200px;
+    text-align: center;
+   border: none;
+   outline: none;
+    padding: 2px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #00000098,rgba(255, 0, 0, 0.699));
+    transition: 2s;
+    box-shadow: 2px 4px 14px rgba(20, 20, 20, 0.863);
+    margin-bottom: 20px;
+    
+}
+.logo-login:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+/*----- Configuraco do Formulario-----*/
+.login-form{
+    width: 100%;
+    max-width: 450px;
+    background: rgba(0, 0, 0, 0.685);
+    border-radius: 4px;
+    padding: 60px;
+    margin: auto;
+}
+.login-form h1{
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 28px;
+    font-family: inherit;
+}
+.login-form input{
+    width: 100%;
+    height: 50px;
+    background: #333;
+    color: white;
+    margin: 12px 0;
+    border: 0;
+    outline: 0;
+    border-radius: 4px;
+    padding: 16px 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.login-form input::placeholder{
+    font-size: 16px;
+    font-weight: 500;
+}
+.login-form button{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    padding: 16px;
+    background: #e50914;
+    color: white;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 20px;
+    cursor: pointer;
+}
+/*Configuracao for the div where we put 'Need Help' e 'Remember Me'*/
+.form-help{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #b3b3b3;
+    font-size: 13px;
+}
+/*-------Configuraction for the checkbox button remember me-------*/
+.remember{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.remember input{
+    width: 18px;
+    height: 18px;
+}
+/*--Configuracao dos links para fazer o registro----*/
+.form-switch{
+    margin-top: 40px;
+    color: #737373;
+}
+.form-switch span{
+    margin-left: 6px;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+}
+/*-------------Configuracao do spinner------------*/
+.login-spinner{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-spinner img{
+    width: 60px;
+}
+
+@media (max-width: 500px) {
+    .logo-login{
+        margin: auto ;
+      
+    }
+    .login{
+        padding: 15px 5%;
+    }
+    .login-form{
+        padding: 20px;
+        margin-top: 30px;
+    }
+}
