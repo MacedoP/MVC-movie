@@ -1,4 +1,4 @@
-// import { firebaseConfig } from "./config";
+ // import { firebaseConfig } from "./config";
 import { create } from "domain";
 import { initializeApp } from "firebase/app";
 import { createUserWithEmailAndPassword, getAuth, signInWithEmailAndPassword, signOut } from "firebase/auth";
